@@ -1,0 +1,67 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Components\" />
+    <Folder Include="Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="BlazorUnitTestingPrototype\bin\Debug\netstandard2.0\Microsoft.AspNetCore.Components.Testing.pdb" />
+    <None Remove="BlazorUnitTestingPrototype\bin\Debug\netstandard2.0\Microsoft.AspNetCore.Components.Testing.dll" />
+    <None Remove="BlazorUnitTestingPrototype\obj\Microsoft.AspNetCore.Components.Testing.csproj.nuget.g.props" />
+    <None Remove="BlazorUnitTestingPrototype\obj\Microsoft.AspNetCore.Components.Testing.csproj.nuget.g.targets" />
+    <None Remove="BlazorUnitTestingPrototype\Microsoft.AspNetCore.Components.Testing\bin\Debug\netstandard2.0\Microsoft.AspNetCore.Components.Testing.pdb" />
+    <None Remove="BlazorUnitTestingPrototype\Microsoft.AspNetCore.Components.Testing\bin\Debug\netstandard2.0\Microsoft.AspNetCore.Components.Testing.dll" />
+    <None Remove="BlazorUnitTestingPrototype\Microsoft.AspNetCore.Components.Testing\obj\Microsoft.AspNetCore.Components.Testing.csproj.nuget.g.props" />
+    <None Remove="BlazorUnitTestingPrototype\Microsoft.AspNetCore.Components.Testing\obj\Microsoft.AspNetCore.Components.Testing.csproj.nuget.cache" />
+    <None Remove="BlazorUnitTestingPrototype\Microsoft.AspNetCore.Components.Testing\obj\Microsoft.AspNetCore.Components.Testing.csproj.nuget.g.targets" />
+    <None Remove="BlazorUnitTestingPrototype\Microsoft.AspNetCore.Components.Testing\obj\Debug\netstandard2.0\Microsoft.AspNetCore.Components.Testing.csproj.CoreCompileInputs.cache" />
+    <None Remove="BlazorUnitTestingPrototype\Microsoft.AspNetCore.Components.Testing\obj\Debug\netstandard2.0\Microsoft.AspNetCore.Components.Testing.csproj.FileListAbsolute.txt" />
+    <None Remove="BlazorUnitTestingPrototype\Microsoft.AspNetCore.Components.Testing\obj\Debug\netstandard2.0\Microsoft.AspNetCore.Components.Testing.pdb" />
+    <None Remove="BlazorUnitTestingPrototype\Microsoft.AspNetCore.Components.Testing\obj\Debug\netstandard2.0\Microsoft.AspNetCore.Components.Testing.assets.cache" />
+    <None Remove="BlazorUnitTestingPrototype\Microsoft.AspNetCore.Components.Testing\obj\Debug\netstandard2.0\Microsoft.AspNetCore.Components.Testing.AssemblyInfoInputs.cache" />
+    <None Remove="BlazorUnitTestingPrototype\Microsoft.AspNetCore.Components.Testing\obj\Debug\netstandard2.0\Microsoft.AspNetCore.Components.Testing.dll" />
+    <None Remove="BlazorUnitTestingPrototype\Microsoft.AspNetCore.Components.Testing\obj\Debug\netstandard2.0\Microsoft.AspNetCore.Components.Testing.csprojAssemblyReference.cache" />
+    <None Remove="BlazorUnitTestingPrototype\Microsoft.AspNetCore.Components.Testing\Microsoft.AspNetCore.Components.Testing.csproj" />
+    <None Remove="BlazorUnitTestingPrototype\obj\Microsoft.AspNetCore.Components.Testing.csproj.nuget.cache" />
+    <None Remove="BlazorUnitTestingPrototype\obj\Debug\netstandard2.0\Microsoft.AspNetCore.Components.Testing.csproj.CoreCompileInputs.cache" />
+    <None Remove="BlazorUnitTestingPrototype\obj\Debug\netstandard2.0\Microsoft.AspNetCore.Components.Testing.csproj.FileListAbsolute.txt" />
+    <None Remove="BlazorUnitTestingPrototype\obj\Debug\netstandard2.0\Microsoft.AspNetCore.Components.Testing.pdb" />
+    <None Remove="BlazorUnitTestingPrototype\obj\Debug\netstandard2.0\Microsoft.AspNetCore.Components.Testing.assets.cache" />
+    <None Remove="BlazorUnitTestingPrototype\obj\Debug\netstandard2.0\Microsoft.AspNetCore.Components.Testing.AssemblyInfoInputs.cache" />
+    <None Remove="BlazorUnitTestingPrototype\obj\Debug\netstandard2.0\Microsoft.AspNetCore.Components.Testing.dll" />
+    <None Remove="BlazorUnitTestingPrototype\obj\Debug\netstandard2.0\Microsoft.AspNetCore.Components.Testing.csprojAssemblyReference.cache" />
+    <None Remove="BlazorUnitTestingPrototype\Microsoft.AspNetCore.Components.Testing.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="BlazorUnitTestingPrototype\obj\Debug\netstandard2.0\Microsoft.AspNetCore.Components.Testing.AssemblyInfo.cs" />
+    <Compile Remove="BlazorUnitTestingPrototype\Microsoft.AspNetCore.Components.Testing\ContainerComponent.cs" />
+    <Compile Remove="BlazorUnitTestingPrototype\Microsoft.AspNetCore.Components.Testing\EventDispatchExtensions.cs" />
+    <Compile Remove="BlazorUnitTestingPrototype\Microsoft.AspNetCore.Components.Testing\TestHtmlDocument.cs" />
+    <Compile Remove="BlazorUnitTestingPrototype\Microsoft.AspNetCore.Components.Testing\Htmlizer.cs" />
+    <Compile Remove="BlazorUnitTestingPrototype\Microsoft.AspNetCore.Components.Testing\RenderedComponent.cs" />
+    <Compile Remove="BlazorUnitTestingPrototype\Microsoft.AspNetCore.Components.Testing\TestRenderer.cs" />
+    <Compile Remove="BlazorUnitTestingPrototype\Microsoft.AspNetCore.Components.Testing\MockHttpExtensions.cs" />
+    <Compile Remove="BlazorUnitTestingPrototype\Microsoft.AspNetCore.Components.Testing\TestHost.cs" />
+    <Compile Remove="BlazorUnitTestingPrototype\Microsoft.AspNetCore.Components.Testing\obj\Debug\netstandard2.0\Microsoft.AspNetCore.Components.Testing.AssemblyInfo.cs" />
+    <Compile Remove="BlazorUnitTestingPrototype\EventDispatchExtensions.cs" />
+    <Compile Remove="BlazorUnitTestingPrototype\ContainerComponent.cs" />
+    <Compile Remove="BlazorUnitTestingPrototype\TestHtmlDocument.cs" />
+    <Compile Remove="BlazorUnitTestingPrototype\Htmlizer.cs" />
+    <Compile Remove="BlazorUnitTestingPrototype\RenderedComponent.cs" />
+    <Compile Remove="BlazorUnitTestingPrototype\TestRenderer.cs" />
+    <Compile Remove="BlazorUnitTestingPrototype\MockHttpExtensions.cs" />
+    <Compile Remove="BlazorUnitTestingPrototype\TestHost.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="BlazorUnitTestingPrototype\bin\Debug\netstandard2.0\Microsoft.AspNetCore.Components.Testing.deps.json" />
+    <Content Remove="BlazorUnitTestingPrototype\obj\project.assets.json" />
+    <Content Remove="BlazorUnitTestingPrototype\Microsoft.AspNetCore.Components.Testing\bin\Debug\netstandard2.0\Microsoft.AspNetCore.Components.Testing.deps.json" />
+    <Content Remove="BlazorUnitTestingPrototype\Microsoft.AspNetCore.Components.Testing\obj\Microsoft.AspNetCore.Components.Testing.csproj.nuget.dgspec.json" />
+    <Content Remove="BlazorUnitTestingPrototype\Microsoft.AspNetCore.Components.Testing\obj\project.assets.json" />
+    <Content Remove="BlazorUnitTestingPrototype\obj\Microsoft.AspNetCore.Components.Testing.csproj.nuget.dgspec.json" />
+  </ItemGroup>
+</Project>

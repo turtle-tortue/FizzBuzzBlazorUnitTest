@@ -1,0 +1,14 @@
+﻿<h3>Fizz - Buzz Component Container</h3>
+
+<section style="display:flex; flex-wrap:wrap">
+    <!-- NOTE: You never really want to define a loop like this, but this is for test purposes only. -->
+    @do
+    {
+        this.SetCurrentState();
+        <p style="flex-basis:10rem;text-align:center;" class="@this.GetStateString() Number-@this.GetCurrentIterator()">
+            @this.TextToPrint()
+        </p>
+        this.IncrementIterator();
+    }while (!this.ReachedIterationEnd());
+</section>
+
