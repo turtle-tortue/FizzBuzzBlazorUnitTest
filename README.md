@@ -1,7 +1,7 @@
 # Testing Blazor Components with FizzBuzz 
 ## Setting up your VisualStudio Environment
 1. Clone the current repository to your desired location
-2. Clone this project [git@github.com:turtle-tortue/BlazorUnitTestingPrototype.git](git@github.com:turtle-tortue/BlazorUnitTestingPrototype.git)
+2. Clone this project git@github.com:turtle-tortue/BlazorUnitTestingPrototype.git
 3. Add the Microsoft.AspNetCore.Components.Testing.csproj project as a reference in the current solution
 
 ## FizzBuzz
