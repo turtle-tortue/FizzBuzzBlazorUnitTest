@@ -2,6 +2,8 @@ using Blazor_FizzBuzz.Components;
 using Blazor_FizzBuzz.Data;
 using Microsoft.AspNetCore.Components.Testing;
 using System;
+using System.Collections;
+using System.Linq;
 using Xunit;
 
 namespace Blazor_FizzBuzzUnitTests
@@ -205,19 +207,18 @@ namespace Blazor_FizzBuzzUnitTests
         [Fact]
         public void BaseFizzBuzzComponentClass_NonDivisibleByThreeOrFive_ReturnsNumber()
         {
-            // Arrange & Act
+            // Arrange
             TestHost testHost = new TestHost();
             var testBaseFizzBuzzRenderedComponent = testHost.AddComponent<BaseFizzBuzzComponent>();
 
-            foreach (HtmlAgilityPack.HtmlNode paragrapItem in testBaseFizzBuzzRenderedComponent.FindAll("p"))
-            {
-                if (paragrapItem.Attributes["class"].Value.Contains("Number-1"))
-                { 
-                    // Assert
-                    Assert.Equal("Number Number-1", paragrapItem.Attributes["class"].Value);
-                    break;
-                }      
-            }
+            // Act: Find my DOM element's class
+            var paragraphElementClass = (
+                from domElements in testBaseFizzBuzzRenderedComponent.FindAll("p")
+                where domElements.Attributes["class"].Value.Contains("Number-1")
+                select domElements.Attributes["class"].Value).FirstOrDefault<string>();
+
+            // Assert
+            Assert.Equal("Number Number-1", paragraphElementClass);
         }
 
         [Fact]
@@ -227,15 +228,14 @@ namespace Blazor_FizzBuzzUnitTests
             TestHost testHost = new TestHost();
             var testBaseFizzBuzzRenderedComponent = testHost.AddComponent<BaseFizzBuzzComponent>();
 
-            foreach (HtmlAgilityPack.HtmlNode paragrapItem in testBaseFizzBuzzRenderedComponent.FindAll("p"))
-            {
-                if (paragrapItem.Attributes["class"].Value.Contains("Number-3"))
-                {
-                    // Assert
-                    Assert.Equal("Fizz Number-3", paragrapItem.Attributes["class"].Value);
-                    break;
-                }
-            }
+            // Act: Find my DOM element's class
+            var paragraphElementClass = (
+                from domElements in testBaseFizzBuzzRenderedComponent.FindAll("p")
+                where domElements.Attributes["class"].Value.Contains("Number-3")
+                select domElements.Attributes["class"].Value).FirstOrDefault<string>();
+
+            // Assert
+            Assert.Equal("Fizz Number-3", paragraphElementClass);
         }
 
         [Fact]
@@ -245,15 +245,14 @@ namespace Blazor_FizzBuzzUnitTests
             TestHost testHost = new TestHost();
             var testBaseFizzBuzzRenderedComponent = testHost.AddComponent<BaseFizzBuzzComponent>();
 
-            foreach (HtmlAgilityPack.HtmlNode paragrapItem in testBaseFizzBuzzRenderedComponent.FindAll("p"))
-            {
-                if (paragrapItem.Attributes["class"].Value.Contains("Number-5"))
-                {
-                    // Assert
-                    Assert.Equal("Buzz Number-5", paragrapItem.Attributes["class"].Value);
-                    break;
-                }
-            }
+            // Act: Find my DOM element's class
+            var paragraphElementClass = (
+                from domElements in testBaseFizzBuzzRenderedComponent.FindAll("p")
+                where domElements.Attributes["class"].Value.Contains("Number-5")
+                select domElements.Attributes["class"].Value).FirstOrDefault<string>();
+
+            // Assert
+            Assert.Equal("Buzz Number-5", paragraphElementClass);
         }
 
         [Fact]
@@ -263,15 +262,14 @@ namespace Blazor_FizzBuzzUnitTests
             TestHost testHost = new TestHost();
             var testBaseFizzBuzzRenderedComponent = testHost.AddComponent<BaseFizzBuzzComponent>();
 
-            foreach (HtmlAgilityPack.HtmlNode paragrapItem in testBaseFizzBuzzRenderedComponent.FindAll("p"))
-            {
-                if (paragrapItem.Attributes["class"].Value.Contains("Number-15"))
-                {
-                    // Assert
-                    Assert.Equal("FizzBuzz Number-15", paragrapItem.Attributes["class"].Value);
-                    break;
-                }
-            }
+            // Act: Find my DOM element's class
+            var paragraphElementClass = (
+                from domElements in testBaseFizzBuzzRenderedComponent.FindAll("p")
+                where domElements.Attributes["class"].Value.Contains("Number-15")
+                select domElements.Attributes["class"].Value).FirstOrDefault<string>();
+
+            // Assert
+            Assert.Equal("FizzBuzz Number-15", paragraphElementClass);
         }
         
         #endregion BEHAVIORAL UNIT TESTS
