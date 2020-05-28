@@ -16,7 +16,7 @@
 
         public void IncrementIterator()
         {
-            this.currentIteration += 1;
+            SetIterator(this.currentIteration + 1);
         }
 
         public int GetCurrentIterator()
@@ -27,6 +27,7 @@
         public void SetIterator(int value)
 		{
             this.currentIteration = value;
+            this.SetCurrentState();
 		}
 
         public string GetStateString()
@@ -47,7 +48,7 @@
             }
         }
 
-        public void SetCurrentState()
+        private void SetCurrentState()
         {
             var iteration = this.currentIteration;
 

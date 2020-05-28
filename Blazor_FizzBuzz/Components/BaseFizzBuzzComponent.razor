@@ -4,7 +4,6 @@
     <!-- NOTE: You never really want to define a loop like this, but this is for test purposes only. -->
     @do
     {
-        this.SetCurrentState();
         <p style="flex-basis:10rem;text-align:center;" class="@this.GetStateString() Number-@this.GetCurrentIterator()">
             @this.TextToPrint()
         </p>
